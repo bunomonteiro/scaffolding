@@ -1,0 +1,4 @@
+.v-clipboard:hover {
+  cursor: pointer;
+  text-decoration: underline dotted;
+}
