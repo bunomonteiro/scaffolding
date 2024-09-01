@@ -31,7 +31,7 @@ const model = reactive({
  * - listens to view events
  * - changes model data
  * - calls external services
- * - it can provide auxiliary data that is not part of the model (like computed data)
+ * - it can provide auxiliary data that is not part of the model and that has or depends on logic (like computed data)
  */
 const viewModel = {
   formSchema: Joi.object({
