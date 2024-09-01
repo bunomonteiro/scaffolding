@@ -27,7 +27,9 @@ const model = reactive({
 })
 
 /**
- * Connects the View and the Model
+ * Connects the View and the Model. 
+ * You can infer that all logic outside the `model` object is the ViewModel, 
+ * although it is recommended to wrap all logic in a plain object to make code organization and maintenance easier.
  * - listens to view events
  * - changes model data
  * - calls external services
