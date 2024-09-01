@@ -1,8 +1,14 @@
 <script setup>
-import Breakpoint from '@/components/Breakpoint.vue';
-import ThemeSwitcher from './components/ThemeSwitcher.vue';
+import { onMounted } from 'vue';
 
-let isDevelopment = (/development/i).test(import.meta.env.MODE)
+import Breakpoint from '@/components/Breakpoint.vue';
+import ThemeSwitcher from '@/components/ThemeSwitcher.vue';
+import { useThemeStore } from '@/stores/theme-store'
+
+const themeStore = useThemeStore()
+const isDevelopment = (/development/i).test(import.meta.env.MODE)
+
+onMounted(() => { themeStore.applyTheme() })
 </script>
 
 <template>
