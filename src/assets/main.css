@@ -1,0 +1,6 @@
+@import './base.css';
+
+html,
+body {
+  background-color: var(--p-surface-950);
+}
